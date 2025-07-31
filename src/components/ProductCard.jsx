@@ -22,7 +22,7 @@ const ProductCard = ({ product }) => {
         </div>
         <p className="card-text flex-grow-1">{product.description.substring(0, 60)}...</p>
         <div className="d-flex justify-content-between align-items-center mt-auto">
-          <span className="h5 mb-0">${product.price}</span>
+          <span className="h5 mb-0">ksh{product.price}</span>
           <Link to={`/product/${product.id}`} className="btn btn-sm btn-outline-primary">
             <i className="bi bi-cart-plus"></i> View Details
           </Link>
